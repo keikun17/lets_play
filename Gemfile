@@ -48,3 +48,6 @@ gem 'haml-rails'
 gem 'sass-rails'
 
 gem 'pg'
+
+gem 'autoprefixer-rails'
+
