@@ -43,7 +43,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 # TODO When Rails 5 comes out, switch to the devise for rails 5 instead of master
-gem 'devise', :github => 'plataformatec/devise', :branch => 'master' 
+gem 'devise', :github => 'plataformatec/devise', :branch => 'master'
 gem 'haml-rails'
+gem 'sass-rails'
 
 gem 'pg'
