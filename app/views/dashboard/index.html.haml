@@ -5,32 +5,54 @@
   .content
     .contacts
 
-      .contact
-        .name David
-        .playing
-          .game Diablo
-          .game Starcraft 2
-          .game Heroes of the Storm
+      .matches
+        %h2 Matches
+        .contact
+          .name David
+          .playing
+            .game Diablo
+            .game Starcraft 2
+            .game Heroes of the Storm
 
-      .contact
-        .name Clarissa
-        .playing
-          .game Diablo
-          .game Starcraft 2
+        .contact
+          .name Clarissa
+          .playing
+            .game Diablo
+            .game Starcraft 2
 
-      .contact
-        .name Neil
-        .playing
-          .game CounterStrike
+        .contact
+          .name Neil
+          .playing
+            .game CounterStrike
 
-      .contact
-        .name Rizza
-        .playing
-          .game Diablo 3
-          .game Starcraft 2
-          .game Counterstrike
+        .contact
+          .name Rizza
+          .playing
+            .game Diablo 3
+            .game Starcraft 2
+            .game Counterstrike
+
+      .others
+        %h2 Others
+        .contact
+          .name Wesley
+          .playing
+            .game Dota 2
+        .contact
+          .name Allan
+          .playing
+            .game TitanFall
 
     .games
+      %h2 Select Games
+      .selection
+        %select
+          %option CounterStrike
+          %option Diablo 3
+          %option Heroes of the Storm
+          %option Starcraft 2
+
+        %button Add
       .game
         .name CounterStrike
         .name Diablo 3
