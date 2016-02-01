@@ -49,5 +49,3 @@ gem 'sass-rails'
 
 gem 'pg'
 
-gem 'autoprefixer-rails'
-
