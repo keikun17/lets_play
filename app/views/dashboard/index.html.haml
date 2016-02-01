@@ -46,15 +46,5 @@
     .games
       %h2 Select Games
       .selection
-        %select
-          %option CounterStrike
-          %option Diablo 3
-          %option Heroes of the Storm
-          %option Starcraft 2
-
+        = select_tag :games, options_for_select( Game.all.collect{|g| [g.name, g.id]} )
         %button Add
-      .game
-        .name CounterStrike
-        .name Diablo 3
-        .name Heroes of the Storm
-        .name Starcraft 2

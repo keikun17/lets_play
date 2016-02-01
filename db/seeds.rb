@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+game_names = [
+  'CounterStrike','Diablo 3', 'Starcraft 2', 'Heroes of the Storm'
+]
+
+game_names.each do |game_name|
+  Game.find_or_create_by(name: game_name)
+end

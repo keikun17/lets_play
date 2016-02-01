@@ -49,3 +49,6 @@ gem 'sass-rails'
 
 gem 'pg'
 
+gem 'autoprefixer-rails'
+
+gem 'activeadmin', github: 'activeadmin'
