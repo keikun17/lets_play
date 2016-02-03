@@ -7,5 +7,11 @@ Rails.application.routes.draw do
   mount ActionCable.server => '/cable'
   resource :dashboard, only: "index"
 
+  resources :users do
+    member do
+      patch 'update_games'
+    end
+  end
+
   root "dashboard#index"
 end
