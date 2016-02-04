@@ -7,7 +7,7 @@ $(document).ready ->
     el = $('<div/>', {class: 'game',  html: game.name})
     $('.tracking').append(el)
 
-  # Otherwise, raise an error
-  $(document).on 'ajax:error', "form[data-behavior~='user_add_game']", (evt, data, status, error  ) ->
-    alert("Error adding game")
+  # # Otherwise, raise an error
+  # $(document).on 'ajax:error', "form[data-behavior~='user_add_game']", (evt, data, status, error  ) ->
+  #   alert("Error adding game")
 
