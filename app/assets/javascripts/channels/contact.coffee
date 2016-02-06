@@ -6,10 +6,15 @@ App.contact = App.cable.subscriptions.create "ContactChannel",
     # Called when the subscription has been terminated by the server
 
   received: (data) ->
+    console.log "data received from websocket is: "
+    console.log(data)
+
+    alert("Receiving data from websocket!")
+
     # Called when there's incoming data on the websocket for this channel
 
-  update_games: ->
-    @perform 'update_games'
+  update_games: (user, game) ->
+    @perform 'update_games', user: user, game: game
 
   update_status: ->
     @perform 'update_status'
