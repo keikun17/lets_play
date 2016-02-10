@@ -7,7 +7,7 @@
       %h2 Contacts
 
       .matches
-        %span.invite-requests Invites pending (2)
+        %span.invite-requests Invites pending (#{current_user.invitations.count})
 
         %h3 Playing Similar Games
 
