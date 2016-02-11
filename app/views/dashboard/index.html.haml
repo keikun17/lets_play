@@ -1,6 +1,9 @@
 .container
   .header
-    PlayerOne
+    .username
+      PlayerOne
+    .links
+      = link_to "Sign out", destroy_user_session_path
 
   .content
     .contacts
