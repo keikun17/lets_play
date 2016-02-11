@@ -3,7 +3,7 @@
     .username
       PlayerOne
     .links
-      = link_to "Sign out", destroy_user_session_path
+      = link_to "Sign out", destroy_user_session_path, method: :delete
 
   .content
     .contacts
