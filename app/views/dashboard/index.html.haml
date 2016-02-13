@@ -1,7 +1,7 @@
 .container
   .header
     .username
-      PlayerOne
+      = current_user.username
     .links
       = link_to "Sign out", destroy_user_session_path, method: :delete
 
