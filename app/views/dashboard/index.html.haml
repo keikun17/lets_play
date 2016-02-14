@@ -14,6 +14,9 @@
 
         %h3 Playing Similar Games
 
+        .add-contacts
+          = form_tag(invite_user_path, remote: true, method: 'get', data: {behavior: 'user_add_friend'}) do
+
         .contact
           .name PlayerTwo
           .playing
