@@ -55,3 +55,5 @@ gem 'autoprefixer-rails'
 gem 'activeadmin', github: 'activeadmin'
 
 gem 'react-rails'
+
+gem 'annotate'

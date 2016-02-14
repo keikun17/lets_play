@@ -75,6 +75,9 @@ GEM
       method_source
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    annotate (2.7.0)
+      activerecord (>= 3.2, < 6.0)
+      rake (~> 10.4)
     arbre (1.0.3)
       activesupport (>= 3.0.0)
     arel (7.0.0)
@@ -286,6 +289,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  annotate
   autoprefixer-rails
   byebug
   coffee-rails (~> 4.1.0)
