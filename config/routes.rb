@@ -13,5 +13,7 @@ Rails.application.routes.draw do
     end
   end
 
+  post "invite_user", to: "invitations#create", as: :invite_user
+
   root "dashboard#index"
 end
