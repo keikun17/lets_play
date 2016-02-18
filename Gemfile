@@ -56,4 +56,6 @@ gem 'activeadmin', github: 'activeadmin'
 
 gem 'react-rails'
 
+gem 'browserify-rails', '1.5.0'
+
 gem 'annotate'
