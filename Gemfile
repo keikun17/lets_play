@@ -58,6 +58,4 @@ gem 'react-rails'
 
 gem 'browserify-rails', '1.5.0'
 
-gem 'sprockets-es6'
-
 gem 'annotate'
