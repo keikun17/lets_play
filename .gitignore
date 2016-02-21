@@ -23,3 +23,5 @@
 dump.rdb
 
 /node_modules
+
+browserify-cache.json
