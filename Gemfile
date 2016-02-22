@@ -56,6 +56,13 @@ gem 'activeadmin', github: 'activeadmin'
 
 gem 'react-rails'
 
-gem 'browserify-rails', '1.5.0'
+gem 'sprockets-rails', github: 'rails/sprockets-rails', branch: 'master'
+gem 'sprockets', github: 'rails/sprockets', branch: 'master'
+
+gem 'babel-transpiler'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-almond'
+end
 
 gem 'annotate'
