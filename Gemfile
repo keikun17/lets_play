@@ -46,7 +46,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # TODO When Rails 5 comes out, switch to the devise for rails 5 instead of master
 gem 'devise', :github => 'plataformatec/devise', :branch => 'master'
 gem 'haml-rails'
-gem 'sass-rails'
+gem 'sass-rails', github: 'rails/sass-rails', branch: 'master'
 
 gem 'pg'
 
@@ -57,7 +57,9 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'react-rails'
 
 gem 'sprockets-rails', github: 'rails/sprockets-rails', branch: 'master'
-gem 'sprockets', github: 'rails/sprockets', branch: 'master'
+gem 'sprockets', github: 'rails/sprockets', tag: 'v4.0.0.beta1'
+
+gem 'pry'
 
 gem 'babel-transpiler'
 
