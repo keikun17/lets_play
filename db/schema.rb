@@ -16,20 +16,6 @@ ActiveRecord::Schema.define(version: 20160211150303) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "active_admin_comments", force: :cascade do |t|
-    t.string   "namespace"
-    t.text     "body"
-    t.string   "resource_id",   null: false
-    t.string   "resource_type", null: false
-    t.string   "author_type"
-    t.integer  "author_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id", using: :btree
-    t.index ["namespace"], name: "index_active_admin_comments_on_namespace", using: :btree
-    t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id", using: :btree
-  end
-
   create_table "games", force: :cascade do |t|
     t.string   "name"
     t.string   "icon_big"
@@ -42,6 +28,8 @@ ActiveRecord::Schema.define(version: 20160211150303) do
     t.integer "user_id"
     t.integer "game_id"
     t.index ["game_id", "user_id"], name: "index_games_users_on_game_id_and_user_id", using: :btree
+    t.index ["game_id"], name: "index_games_users_on_game_id", using: :btree
+    t.index ["user_id"], name: "index_games_users_on_user_id", using: :btree
   end
 
   create_table "invitations", force: :cascade do |t|

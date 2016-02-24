@@ -6,8 +6,8 @@ class CreateInvitesTable < ActiveRecord::Migration[5.0]
       t.timestamps
     end
 
-    add_index :invitations, :sender_id
-    add_index :invitations, :receiver_id
+    # add_index :invitations, :sender_id
+    # add_index :invitations, :receiver_id
 
 
   end
