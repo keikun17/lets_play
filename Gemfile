@@ -52,7 +52,7 @@ gem 'pg'
 
 gem 'autoprefixer-rails'
 
-gem 'activeadmin', github: 'activeadmin'
+# gem 'activeadmin', github: 'activeadmin', branch: 'master'
 
 gem 'react-rails'
 
