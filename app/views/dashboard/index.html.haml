@@ -1,4 +1,5 @@
 .container
+  = react_component('Something', {presenter: {name: 'Mario'}.to_json}, {prerender: true})
   .header
     .username
       = current_user.username

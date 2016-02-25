@@ -59,7 +59,7 @@ Rails.application.configure do
   # Use development build of react
   # https://github.com/reactjs/react-rails
   config.react.variant = :development
-  # config.react.addons = true # defaults to false
+  config.react.addons = true # defaults to false
 
 
 end
